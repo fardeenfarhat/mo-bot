@@ -1,0 +1,52 @@
+<!-- templates/dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .metrics-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="metrics-container">
+        <h1>Dashboard</h1>
+
+        <h2>Metrics</h2>
+        <p>Total Number of Products: {{ metrics.total_products }}</p>
+        <p>Average Product Price: RS : {{ metrics.average_price }}</p>
+        <p>Average Ratings of Products: {{ metrics.average_ratings }}</p>
+    </div>
+</body>
+</html>
